@@ -1,0 +1,415 @@
+@import url("../fonts/ProximaNova/stylesheet.css");
+*,
+*:before,
+*:after,
+*:focus {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #08113F;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Proxima Nova Rg", sans-serif;
+  position: relative;
+}
+
+h2 {
+  font-family: "Proxima Nova Rg";
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 85px;
+  color: #3052D8;
+}
+
+@media (max-width: 991px) {
+  h2 {
+    font-size: 64px;
+  }
+}
+@media (max-width: 767px) {
+  h2 {
+    font-size: 44px;
+    line-height: 1.2;
+  }
+}
+@media (max-width: 575px) {
+  h2 {
+    font-size: 34px;
+  }
+}
+h3 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 61px;
+}
+
+.steps {
+  padding-top: 150px;
+  margin-bottom: 190px;
+}
+
+.wrap {
+  max-width: 1360px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.steps_title {
+  max-width: 745px;
+  margin-bottom: 60px;
+}
+
+.steps_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+@media (max-width: 991px) {
+  .steps_row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.steps_card {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 20%;
+          flex: 0 0 20%;
+}
+.steps_card:last-child .steps_card_num:after {
+  content: none;
+}
+.steps_card:last-child .steps_card_text p {
+  padding-right: 0;
+}
+
+@media (max-width: 991px) {
+  .steps_card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    min-height: 100px;
+  }
+}
+@media (max-width: 767px) {
+  .steps_card {
+    min-height: 120px;
+  }
+}
+@media (max-width: 575px) {
+  .steps_card {
+    min-height: 120px;
+  }
+}
+.steps_card_num {
+  margin-bottom: 31px;
+  position: relative;
+}
+.steps_card_num:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translate(-50% 0);
+          transform: translate(-50% 0);
+  background-color: #3052D8;
+  z-index: -1;
+}
+.steps_card_num p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 51px;
+  height: 51px;
+  border-radius: 50%;
+  background-color: #3052D8;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 27px;
+  color: #fff;
+}
+
+@media (max-width: 991px) {
+  .steps_card_num {
+    margin: 0 30px 0 0;
+  }
+  .steps_card_num:after {
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(0% -50%);
+            transform: translate(0% -50%);
+    width: 2px;
+    height: 100%;
+  }
+}
+.steps_card_text p {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 28px;
+  padding-right: 50px;
+}
+
+@media (max-width: 1200px) {
+  .steps_card_text p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 991px) {
+  .steps_card_text {
+    padding-bottom: 30px;
+  }
+  .steps_card_text p {
+    font-size: 19px;
+  }
+}
+/* ----end steps---- */
+/* ----start questions----- */
+.questions_title {
+  margin-bottom: 60px;
+}
+
+.questions_subtitle {
+  margin-bottom: 47px;
+}
+.questions_subtitle p {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+}
+
+.questions_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  margin-bottom: 130px;
+  overflow: hidden;
+}
+
+.questions_card {
+  cursor: pointer;
+}
+.questions_card.active .questions_card_wrap {
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+  background-color: #E1E8F8;
+}
+.questions_card.active .questions_card_pic svg path {
+  fill: #08113F;
+}
+.questions_card.active .questions_card_text p {
+  color: #08113F;
+}
+
+@media (max-width: 767px) {
+  .questions_card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+.questions_card_wrap {
+  width: 209px;
+  height: 152px;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #3052D8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.questions_card_pic svg path {
+  fill: #fff;
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+}
+
+.questions_card_text p {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 28px;
+  color: #fff;
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+}
+
+.questions_descr {
+  margin-bottom: 65px;
+  position: relative;
+}
+
+.questions_descr_wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+  z-index: -1;
+}
+.questions_descr_wrap.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.questions_descr_title {
+  margin-bottom: 42px;
+}
+
+.questions_descr_item {
+  padding: 23px 26px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.questions_descr_item:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  left: 0;
+  bottom: 0;
+  background-color: #3052D8;
+}
+.questions_descr_item:first-child:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  top: 0;
+  left: 0;
+  background-color: #3052D8;
+}
+
+.questions_descr_item.active .questions_descr_item_answer_wrap {
+  margin: 0 !important;
+}
+.questions_descr_item.active .questions_descr_item_pic {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.questions_descr_item_header {
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.questions_descr_item_header:hover {
+  opacity: 0.8;
+}
+.questions_descr_item_header p {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #3052D8;
+}
+
+.questions_descr_item_answer {
+  overflow: hidden;
+  position: relative;
+}
+.questions_descr_item_answer p, .questions_descr_item_answer span {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.questions_descr_item_answer ul {
+  padding-left: 20px;
+}
+.questions_descr_item_answer ul li {
+  color: #3052D8;
+  margin-bottom: 20px;
+}
+.questions_descr_item_answer ul li:last-child {
+  margin-bottom: 0;
+}
+
+.questions_descr_item_answer_wrap {
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+}
+.questions_descr_item_answer_wrap p, .questions_descr_item_answer_wrap a {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.questions_descr_item_answer_wrap a {
+  font-weight: 600;
+  color: #3052D8;
+}
+
+.questions_descr_item_pic {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33px;
+          flex: 0 0 33px;
+  height: 33px;
+  border-radius: 50%;
+  background: url("../img/chevron_down.svg") center no-repeat #3052D8;
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+/* ----end questions----- */
