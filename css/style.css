@@ -375,6 +375,11 @@ h3 {
   background-color: #3052D8;
 }
 
+@media (max-width: 575px) {
+  .questions_descr_item {
+    padding: 23px 0;
+  }
+}
 .questions_descr_item.active .questions_descr_item_answer_wrap {
   margin: 0 !important;
 }

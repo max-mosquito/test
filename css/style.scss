@@ -321,6 +321,11 @@ h3{
 		}
 	}
 }
+@media (max-width: 575px) {
+	.questions_descr_item{
+		padding: 23px 0;
+	}
+}
 .questions_descr_item.active{
 	.questions_descr_item_answer_wrap{
 		margin: 0 !important;
