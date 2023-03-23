@@ -170,7 +170,9 @@ h3{
 }
 /* ----end steps---- */
 /* ----start questions----- */
-.questions {}
+.questions {
+	padding-bottom: 150px;
+}
 .questions_wrap {}
 .questions_title {
 	margin-bottom: 60px;
@@ -286,6 +288,7 @@ h3{
 		opacity: 1;
 		// display: block;
 		z-index: 1;
+		position: relative;
 	}
 }
 .questions_descr_title {
@@ -326,7 +329,9 @@ h3{
 		transform:rotate(180deg);
 	}
 }
-.questions_descr_item_info{}
+.questions_descr_item_info{
+	margin-right: 20px;
+}
 .questions_descr_item_header {
 	cursor: pointer;
 	position: relative;
@@ -387,5 +392,31 @@ h3{
 	background: url("../img/chevron_down.svg")center no-repeat $bb;
 	transition:0.9s;
 	transform:rotate(0deg);
+}
+.questions_btn {
+	text-align: center;
+}
+.btn {
+	font-size: 23px;
+	font-weight: 600;
+	line-height: 28px;
+	color:$bb;
+	background-color: transparent;
+	border: 2px solid #3052D8;
+	border-radius: 60px;
+	width: 361px;
+	height: 69px;
+	cursor: pointer;
+	transition:0.3s;
+	&:hover{
+		opacity: 0.7;
+	}
+}
+@media (max-width: 575px) {
+	.btn{
+		width: 270px;
+		height: 48px;
+		font-size: 16px;
+	}
 }
 /* ----end questions----- */

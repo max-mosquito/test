@@ -200,6 +200,10 @@ h3 {
 }
 /* ----end steps---- */
 /* ----start questions----- */
+.questions {
+  padding-bottom: 150px;
+}
+
 .questions_title {
   margin-bottom: 60px;
 }
@@ -332,6 +336,7 @@ h3 {
 .questions_descr_wrap.active {
   opacity: 1;
   z-index: 1;
+  position: relative;
 }
 
 .questions_descr_title {
@@ -376,6 +381,10 @@ h3 {
 .questions_descr_item.active .questions_descr_item_pic {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+
+.questions_descr_item_info {
+  margin-right: 20px;
 }
 
 .questions_descr_item_header {
@@ -447,4 +456,33 @@ h3 {
           transform: rotate(0deg);
 }
 
+.questions_btn {
+  text-align: center;
+}
+
+.btn {
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 28px;
+  color: #3052D8;
+  background-color: transparent;
+  border: 2px solid #3052D8;
+  border-radius: 60px;
+  width: 361px;
+  height: 69px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.btn:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 575px) {
+  .btn {
+    width: 270px;
+    height: 48px;
+    font-size: 16px;
+  }
+}
 /* ----end questions----- */
