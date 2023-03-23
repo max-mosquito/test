@@ -443,6 +443,12 @@ h3 {
   color: #3052D8;
 }
 
+@media (max-width: 575px) {
+  .questions_descr_item_answer_wrap p, .questions_descr_item_answer_wrap span, .questions_descr_item_answer_wrap a {
+    font-size: 19px;
+    line-height: 1.2;
+  }
+}
 .questions_descr_item_pic {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 33px;

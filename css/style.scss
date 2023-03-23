@@ -385,6 +385,14 @@ h3{
 		color:$bb;
 	}
 }
+@media (max-width: 575px) {
+	.questions_descr_item_answer_wrap{
+		p, span, a{
+			font-size: 19px;
+			line-height: 1.2;
+		}
+	}
+}
 .questions_descr_item_pic{
 	flex: 0 0 33px;
 	height: 33px;
